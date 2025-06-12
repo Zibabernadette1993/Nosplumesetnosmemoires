@@ -1,0 +1,127 @@
+/* Style général */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f4f4f4, #ffffff);
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* En-tête */
+header {
+  background: linear-gradient(to right, #202040, #404080);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  animation: slideDown 1s ease-out;
+}
+
+@keyframes slideDown {
+  0% { transform: translateY(-50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Titres */
+h1, h2, h3, h4 {
+  text-align: center;
+  color: #202040;
+  transition: color 0.3s ease;
+}
+h1:hover, h2:hover, h3:hover, h4:hover {
+  color: #404080;
+}
+
+/* Navigation */
+nav {
+  background-color: #404080;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+nav a:hover {
+  color: #ffcc00;
+  transform: scale(1.1);
+}
+
+/* Contenu principal */
+main {
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Pied de page */
+footer {
+  background-color: #202040;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 0.9em;
+  animation: slideUp 1s ease-out;
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Sections */
+section {
+  margin-bottom: 50px;
+  padding: 20px;
+  border-left: 4px solid #404080;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+section:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Liens dans les textes */
+a {
+  color: #404080;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #202040;
+}
+
+/* Boutons (si besoin plus tard) */
+.button {
+  background-color: #404080;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.button:hover {
+  background-color: #202040;
+  transform: scale(1.05);
+}
